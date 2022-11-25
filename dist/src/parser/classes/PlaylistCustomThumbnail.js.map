@@ -1,0 +1,1 @@
+{"version":3,"file":"PlaylistCustomThumbnail.js","sourceRoot":"","sources":["../../../../src/parser/classes/PlaylistCustomThumbnail.ts"],"names":[],"mappings":";;;;;AAAA,wCAAoC;AACpC,iEAAyC;AAEzC,MAAqB,uBAAwB,SAAQ,gBAAM;IAKzD,YAAY,IAAS;QACnB,KAAK,EAAE,CAAC;QACR,IAAI,CAAC,SAAS,GAAG,mBAAS,CAAC,YAAY,CAAC,IAAI,CAAC,SAAS,CAAC,CAAC;IAC1D,CAAC;;AARH,0CASC;AARQ,4BAAI,GAAG,yBAAyB,CAAC"}
