@@ -8,8 +8,8 @@ import ItemSection from '../classes/ItemSection';
 import Message from '../classes/Message';
 declare class Recap {
     #private;
-    header: HighlightsCarousel | MusicHeader | undefined;
-    sections: import("../helpers").ObservedArray<ItemSection | Message | MusicCarouselShelf> | undefined;
+    header: MusicHeader | HighlightsCarousel | undefined;
+    sections: import("../helpers").ObservedArray<ItemSection | MusicCarouselShelf | Message> | undefined;
     constructor(response: ApiResponse, actions: Actions);
     /**
      * Retrieves recap playlist.

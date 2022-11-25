@@ -7,7 +7,7 @@ declare class PlaylistPanel extends YTNode {
     static type: string;
     title: string;
     title_text: Text;
-    contents: import("../helpers").ObservedArray<AutomixPreviewVideo | PlaylistPanelVideo | PlaylistPanelVideoWrapper>;
+    contents: import("../helpers").ObservedArray<PlaylistPanelVideo | AutomixPreviewVideo | PlaylistPanelVideoWrapper>;
     playlist_id: string;
     is_infinite: boolean;
     continuation: string;

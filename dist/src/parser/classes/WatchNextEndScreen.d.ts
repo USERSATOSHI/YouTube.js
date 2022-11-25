@@ -3,7 +3,7 @@ import EndScreenPlaylist from './EndScreenPlaylist';
 import { YTNode } from '../helpers';
 declare class WatchNextEndScreen extends YTNode {
     static type: string;
-    results: import("../helpers").ObservedArray<EndScreenPlaylist | EndScreenVideo>;
+    results: import("../helpers").ObservedArray<EndScreenVideo | EndScreenPlaylist>;
     title: string;
     constructor(data: any);
 }

@@ -20,7 +20,7 @@ declare class Playlist extends Feed {
     menu: any;
     endpoint: import("../classes/NavigationEndpoint").default;
     constructor(actions: Actions, data: any, already_parsed?: boolean);
-    get items(): import("../helpers").ObservedArray<import("../classes/CompactVideo").default | import("../classes/GridVideo").default | import("../classes/PlaylistPanelVideo").default | import("../classes/PlaylistVideo").default | import("../classes/ReelItem").default | import("../classes/Video").default | import("../classes/WatchCardCompactVideo").default>;
+    get items(): import("../helpers").ObservedArray<import("../classes/CompactVideo").default | import("../classes/GridVideo").default | import("../classes/PlaylistPanelVideo").default | import("../classes/PlaylistVideo").default | import("../classes/WatchCardCompactVideo").default | import("../classes/Video").default | import("../classes/ReelItem").default>;
     getContinuation(): Promise<Playlist>;
 }
 export default Playlist;

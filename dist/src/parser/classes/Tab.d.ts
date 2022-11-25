@@ -8,7 +8,7 @@ declare class Tab extends YTNode {
     title: string;
     selected: boolean;
     endpoint: NavigationEndpoint;
-    content: MusicQueue | RichGrid | SectionList | null;
+    content: SectionList | MusicQueue | RichGrid | null;
     constructor(data: any);
 }
 export default Tab;

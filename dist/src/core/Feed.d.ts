@@ -23,15 +23,15 @@ declare class Feed {
     /**
      * Get all videos on a given page via memo
      */
-    static getVideosFromMemo(memo: Memo): ObservedArray<CompactVideo | GridVideo | PlaylistPanelVideo | PlaylistVideo | ReelItem | Video | WatchCardCompactVideo>;
+    static getVideosFromMemo(memo: Memo): ObservedArray<CompactVideo | GridVideo | PlaylistPanelVideo | PlaylistVideo | WatchCardCompactVideo | Video | ReelItem>;
     /**
      * Get all playlists on a given page via memo
      */
-    static getPlaylistsFromMemo(memo: Memo): ObservedArray<Playlist | GridPlaylist>;
+    static getPlaylistsFromMemo(memo: Memo): ObservedArray<GridPlaylist | Playlist>;
     /**
      * Get all the videos in the feed
      */
-    get videos(): ObservedArray<CompactVideo | GridVideo | PlaylistPanelVideo | PlaylistVideo | ReelItem | Video | WatchCardCompactVideo>;
+    get videos(): ObservedArray<CompactVideo | GridVideo | PlaylistPanelVideo | PlaylistVideo | WatchCardCompactVideo | Video | ReelItem>;
     /**
      * Get all the community posts in the feed
      */
@@ -43,12 +43,12 @@ declare class Feed {
     /**
      * Get all playlists in the feed
      */
-    get playlists(): ObservedArray<Playlist | GridPlaylist>;
+    get playlists(): ObservedArray<GridPlaylist | Playlist>;
     get memo(): Memo;
     /**
      * Returns contents from the page.
      */
-    get page_contents(): ReloadContinuationItemsCommand | import("../parser/classes/MusicQueue").default | import("../parser/classes/RichGrid").default | import("../parser/classes/SectionList").default;
+    get page_contents(): ReloadContinuationItemsCommand | import("../parser/classes/SectionList").default | import("../parser/classes/MusicQueue").default | import("../parser/classes/RichGrid").default;
     /**
      * Returns all segments/sections from the page.
      */

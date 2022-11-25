@@ -54,7 +54,7 @@ declare class TrackInfo {
     /**
      * Retrieves contents of the given tab.
      */
-    getTab(title: string): Promise<ObservedArray<import("../helpers").YTNode> | Message | MusicQueue | import("../classes/RichGrid").default | SectionList>;
+    getTab(title: string): Promise<ObservedArray<import("../helpers").YTNode> | SectionList | MusicQueue | import("../classes/RichGrid").default | Message>;
     /**
      * Retrieves up next.
      */

@@ -8,7 +8,7 @@ import MusicVisualHeader from '../classes/MusicVisualHeader';
 import MusicHeader from '../classes/MusicHeader';
 declare class Artist {
     #private;
-    header: MusicHeader | MusicImmersiveHeader | MusicVisualHeader | undefined;
+    header: MusicImmersiveHeader | MusicVisualHeader | MusicHeader | undefined;
     sections: (MusicCarouselShelf | MusicShelf)[];
     constructor(response: ApiResponse | ParsedResponse, actions: Actions);
     getAllSongs(): Promise<MusicPlaylistShelf | null>;

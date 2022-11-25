@@ -9,7 +9,7 @@ declare class SettingsOptions extends YTNode {
     static type: string;
     title: Text;
     text?: string;
-    options?: import("../helpers").ObservedArray<Dropdown | ChannelOptions | CopyLink | SettingsCheckbox | SettingsSwitch> | undefined;
+    options?: import("../helpers").ObservedArray<Dropdown | SettingsSwitch | SettingsCheckbox | ChannelOptions | CopyLink> | undefined;
     constructor(data: any);
 }
 export default SettingsOptions;

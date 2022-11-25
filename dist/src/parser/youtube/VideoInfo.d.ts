@@ -175,9 +175,7 @@ declare class VideoInfo {
             audio_only_playablility: import("../classes/AudioOnlyPlayability").default | null;
             embeddable: boolean;
             reason: any;
-        } | undefined; /**
-         * Retrieves Live Chat if available.
-         */
+        } | undefined;
         streaming_data: {
             expires: Date;
             formats: Format[];
@@ -227,9 +225,7 @@ declare class VideoInfo {
             audio_only_playablility: import("../classes/AudioOnlyPlayability").default | null;
             embeddable: boolean;
             reason: any;
-        } | undefined; /**
-         * Retrieves Live Chat if available.
-         */
+        } | undefined;
         streaming_data: {
             expires: Date;
             formats: Format[];

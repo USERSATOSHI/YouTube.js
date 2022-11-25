@@ -1,6 +1,6 @@
 import Format from './classes/misc/Format';
 import VideoDetails from './classes/misc/VideoDetails';
-import GetParserByName from './map';
+
 import Endscreen from './classes/Endscreen';
 import CardCollection from './classes/CardCollection';
 import NavigationEndpoint from './classes/NavigationEndpoint';
@@ -367,7 +367,9 @@ export default class Parser {
     const classname = this.sanitizeClassName(keys[0]);
 
     if (!this.shouldIgnore(classname)) {
-      try {
+      try
+      {
+        const GetParserByName = (require( './map' )).default;
         const TargetClass = GetParserByName(classname);
 
         if (validTypes) {

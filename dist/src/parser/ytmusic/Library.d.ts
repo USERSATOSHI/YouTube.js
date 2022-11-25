@@ -8,7 +8,7 @@ import MusicMultiSelectMenuItem from '../classes/menus/MusicMultiSelectMenuItem'
 declare class Library {
     #private;
     header: MusicSideAlignedItem | undefined;
-    contents: import("../helpers").ObservedArray<Grid | MusicShelf>;
+    contents: import("../helpers").ObservedArray<MusicShelf | Grid>;
     constructor(response: ApiResponse, actions: Actions);
     /**
      * Applies given sort filter to the library items.

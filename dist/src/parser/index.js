@@ -18,7 +18,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.LiveChatContinuation = exports.TimedContinuation = exports.PlaylistPanelContinuation = exports.GridContinuation = exports.MusicShelfContinuation = exports.MusicPlaylistShelfContinuation = exports.SectionListContinuation = exports.ReloadContinuationItemsCommand = exports.AppendContinuationItemsAction = void 0;
 const Format_1 = __importDefault(require("./classes/misc/Format"));
 const VideoDetails_1 = __importDefault(require("./classes/misc/VideoDetails"));
-const map_1 = __importDefault(require("./map"));
 const Endscreen_1 = __importDefault(require("./classes/Endscreen"));
 const CardCollection_1 = __importDefault(require("./classes/CardCollection"));
 const NavigationEndpoint_1 = __importDefault(require("./classes/NavigationEndpoint"));
@@ -288,7 +287,8 @@ class Parser {
         const classname = this.sanitizeClassName(keys[0]);
         if (!this.shouldIgnore(classname)) {
             try {
-                const TargetClass = (0, map_1.default)(classname);
+                const GetParserByName = (require('./map')).default;
+                const TargetClass = GetParserByName(classname);
                 if (validTypes) {
                     if (Array.isArray(validTypes)) {
                         if (!validTypes.some((type) => type.type === TargetClass.type))
