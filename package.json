@@ -24,13 +24,6 @@
     "test": "npx jest --verbose",
     "lint": "npx eslint ./src",
     "lint:fix": "npx eslint --fix ./src",
-    "build": "npm run build:parser-map && npm run build:proto && npm run bundle:browser && npm run bundle:browser:prod && npm run build:node",
-    "build:node": "npx tsc",
-    "bundle:browser": "npx tsc --module esnext && npx esbuild ./dist/browser.js --banner:js=\"/* eslint-disable */\" --bundle --target=chrome58 --keep-names --format=esm --sourcemap --define:global=globalThis --outfile=./bundle/browser.js --platform=browser",
-    "bundle:browser:prod": "npm run bundle:browser -- --outfile=./bundle/browser.min.js --minify",
-    "build:parser-map": "node ./scripts/build-parser-map.js",
-    "build:proto": "npx protoc --ts_out ./src/proto --proto_path ./src/proto ./src/proto/youtube.proto",
-    "prepare": "npm run build",
     "watch": "npx tsc --watch"
   },
   "repository": {
